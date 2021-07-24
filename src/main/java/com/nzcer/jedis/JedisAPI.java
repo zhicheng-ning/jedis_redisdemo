@@ -19,7 +19,8 @@ public class JedisAPI {
     private Jedis jedis;
     @Before
     public void init() {
-        jedis = new Jedis("139.196.204.173", 6379);
+        //实际host以远程服务器ip地址或本地地址
+        jedis = new Jedis("xxx.xxx.xxx.xxx", 6379);
     }
 
     @After
